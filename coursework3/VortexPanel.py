@@ -254,7 +254,7 @@ class PanelArray(object):
         circle.plot_flow()                 # plot the flow
         """
         # define the grid
-        line = numpy.linspace(-size, size, 1024)  # computes a 1D-array
+        line = numpy.linspace(-size, size, 100)  # computes a 1D-array
         x, y = numpy.meshgrid(line, line)        # generates a mesh grid
 
         # get the velocity from the free stream and panels
