@@ -106,4 +106,4 @@ def sep(y,iSep):
     from math import ceil         # numpy doesn't do ceil correctly
     i = ceil(iSep)                # round up to nearest integer
     di = i-iSep                   # interpolation `distance`
-    return y[i-1]*di+y[i]*(1-di)  # linearly interpolate
+    return y[int(i-1)]*di+y[int(i)]*(1-di)  # linearly interpolate
